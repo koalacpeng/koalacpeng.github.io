@@ -39,7 +39,7 @@ $(document).ready(function() {
     }
 
 		// Initialize all div with carousel class
-    // var carousels = bulmaCarousel.attach('.carousel', options);
+    var carousels = bulmaCarousel.attach('.carousel', options);
 
     // Loop on each carousel initialized
     for(var i = 0; i < carousels.length; i++) {
@@ -50,13 +50,13 @@ $(document).ready(function() {
     }
 
     // Access to bulmaCarousel instance of an element
-    // var element = document.querySelector('#my-element');
-    // if (element && element.bulmaCarousel) {
-    // 	// bulmaCarousel instance is available as element.bulmaCarousel
-    // 	element.bulmaCarousel.on('before-show', function(state) {
-    // 		// console.log(state);
-    // 	});
-    // }
+    var element = document.querySelector('#my-element');
+    if (element && element.bulmaCarousel) {
+    	// bulmaCarousel instance is available as element.bulmaCarousel
+    	element.bulmaCarousel.on('before-show', function(state) {
+    		// console.log(state);
+    	});
+    }
 
     /*var player = document.getElementById('interpolation-video');
     player.addEventListener('loadedmetadata', function() {
